@@ -26,7 +26,7 @@ dist-ssr
 # Docker
 *.dockerignore
 docker-compose.override.yml
-docker-compose.yml  # Optional if you commit it
+# docker-compose.yml  # Commented out - we DO want to commit this file
 
 # Python Virtual Environments
 venv/
@@ -72,3 +72,23 @@ staticfiles/
 .env.development.local
 .env.test.local
 .env.production.local
+
+# Testing & Coverage
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.cache
+
+# OS specific files
+Thumbs.db
+.DS_Store
+*.tmp
+*.temp
+
+# IDE & Editor files
+.vscode/settings.json
+.vscode/launch.json
+*.swp
+*.swo
+*~
